@@ -1,10 +1,10 @@
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 import streamlit as st
 
 def create_text_pdf(title, content, filename="document.pdf"):
-    c = canvas.Canvas(filename, pagesize=letter)
-    width, height = letter
+    c = canvas.Canvas(filename, pagesize=A4)
+    width, height = A4
     
     margin = 50
     y = height - margin
